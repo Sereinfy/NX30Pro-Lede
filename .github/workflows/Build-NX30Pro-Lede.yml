@@ -74,11 +74,11 @@ jobs:
     - name: Update feeds
       run: |
         cd openwrt
+        echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
         ./scripts/feeds update -a && ./scripts/feeds install -a
 
     - name: File Diy Patch
       run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_SH
