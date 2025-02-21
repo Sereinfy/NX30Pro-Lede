@@ -28,7 +28,6 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   DIY_SH: diy.sh
-  FEEDS_CONF: feeds.conf.default
   TZ: Asia/Shanghai
 
 jobs:
