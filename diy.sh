@@ -41,7 +41,8 @@ rm -rf package/feeds/packages/v2ray-geodata
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # nikki
-git clone  https://github.com/nikkinikki-org/OpenWrt-nikki.git package/luci-app-nikki
+git clone  https://github.com/nikkinikki-org/OpenWrt-nikki.git package/nikki
+
 # openclash
 #rm -rf feeds/luci/applications/luci-app-openclash
 #rm -rf package/feeds/luci/luci-app-openclash
