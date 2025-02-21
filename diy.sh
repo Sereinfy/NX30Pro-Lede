@@ -43,7 +43,7 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # nikki
 #git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/OpenWrt-nikki
 #2
-git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki.git -b main package/luci-app-nikki
+git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki.git -b main package/OpenWrt-nikki
 # openclash
 #rm -rf feeds/luci/applications/luci-app-openclash
 #rm -rf package/feeds/luci/luci-app-openclash
