@@ -28,6 +28,7 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   DIY_SH: diy.sh
+  FEEDS_CONF: feeds.conf.default
   TZ: Asia/Shanghai
 
 jobs:
@@ -77,6 +78,7 @@ jobs:
 
     - name: File Diy Patch
       run: |
+        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_SH
