@@ -73,7 +73,12 @@ jobs:
     - name: Update feeds
       run: |
         cd openwrt
-        echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+        if [ -f feeds.conf.default ]; then
+            echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+        else
+            echo "文件不存在"
+        fi
+        
         ./scripts/feeds update -a && ./scripts/feeds install -a
 
     - name: File Diy Patch
