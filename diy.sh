@@ -31,17 +31,18 @@ sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-defaul
 sed -i '/\/bin\/login -f root/!s|/bin/login|/bin/login -f root|' ./feeds/packages/utils/ttyd/files/ttyd.config
 
 # 下载插件
-# mosdns 依赖
+# mosdns
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
-
 rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf package/feeds/packages/mosdns
 rm -rf package/feeds/packages/v2ray-geodata
-
-# mosdns
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # nikki
 git clone  https://github.com/nikkinikki-org/OpenWrt-nikki.git package/nikki
+# openclash
+#rm -rf feeds/luci/applications/luci-app-openclash
+#rm -rf package/feeds/luci/luci-app-openclash
+#git clone --depth=1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
