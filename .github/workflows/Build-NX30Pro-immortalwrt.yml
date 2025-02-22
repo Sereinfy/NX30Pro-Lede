@@ -97,7 +97,6 @@ jobs:
     - name: File Patch After
       run: |
         cd openwrt
-        curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
         sed -i "s|services|system|g" feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
 
     - name: Generate configuration file
