@@ -144,7 +144,7 @@ jobs:
         CONFIG_TARGET_mediatek=y
         CONFIG_TARGET_mediatek_mt7981=y
         #设备列表
-        CONFIG_TARGET_mediatek_mt7981_DEVICE_h3c_nx30pro=y
+        CONFIG_TARGET_mediatek_mt7981_DEVICE_h3c_magic-nx30-pro=y
         EOF
 
         # IPv6支持:
