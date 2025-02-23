@@ -24,8 +24,7 @@ cd package
 sed -i "s/OpenWrt /Wing build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" lean/default-settings/files/zzz-default-settings
 sed -i "/firewall\.user/d" lean/default-settings/files/zzz-default-settings
 # 设置管理地址
-sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
-sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/luci2/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.1/g' base-files/files/bin/config_generate
 # 设置密码为空
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' lean/default-settings/files/zzz-default-settings
 
