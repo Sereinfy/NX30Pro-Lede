@@ -44,4 +44,4 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 #rm -rf feeds/luci/applications/luci-app-openclash
 #rm -rf package/feeds/luci/luci-app-openclash
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
-git_clone https://github.com/immortalwrt/homeproxy luci-app-homeproxy
+git clone --depth=1 https://github.com/immortalwrt/homeproxy.git package/homeproxy
